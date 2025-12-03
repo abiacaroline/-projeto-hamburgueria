@@ -42,7 +42,7 @@
 
     <h2 class="text-2xl md:text-3xl font-bold text-center my-9">Conheça nosso menu</h2>
 
-    <div>
+    <div id="menu">
       <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 px-2 mb-16 mx-auto max-w-7xl">
         <div class="flex gap-2">
           <img
@@ -58,7 +58,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 18.90</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Smash"
+                data-price="18.90"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -79,7 +83,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 32.90</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Duplo"
+                data-price="32.90"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -100,7 +108,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 35.90</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Cheeseburger"
+                data-price="35.90"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -121,7 +133,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 30</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer da Casa"
+                data-price="30"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -142,7 +158,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 25.50</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Bacon Burger"
+                data-price="25.50"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -163,7 +183,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 19.90</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Barbecue Burger"
+                data-price="19.90"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -184,7 +208,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 17.30</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Chicken Burger"
+                data-price="17.30"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -205,7 +233,11 @@
             </p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 19.90</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Salad"
+                data-price="19.90"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -217,7 +249,7 @@
         <h2 class="font-bold text-3xl">Bebidas</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 px-2 mb-16 mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 px-2 mb-16 mx-auto max-w-7xl" id="menu">
         <div class="flex gap-2">
           <img
             src="./assets/refri-1.png"
@@ -228,7 +260,11 @@
             <p class="font-bold">Coca Cola lata</p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 6</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Cola Cola lata"
+                data-price="6"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -244,7 +280,11 @@
             <p class="font-bold">Guaraná lata</p>
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 6</p>
-              <button class="bg-gray-900 px-5 rounded">
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Guaraná lata"
+                data-price="6"
+              >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
