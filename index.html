@@ -305,15 +305,16 @@
         <p>Endereço de entrega:</p>
         <input
           type="text"
+          id="address"
           placeholder="Digite seu endereço completo"
           class="w-full border-2 p-1 rounded my-1"
         />
 
-        <p class="text-red-500 hidden">Digite seu endereço completo!</p>
+        <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
 
         <div class="flex items-center justify-between mt-4 w-full">
           <button id="close-modal-btn">Fechar</button>
-          <button class="bg-green-500 hover:bg-green-400 text-white px-4 py-1 rounded">
+          <button class="bg-green-500 hover:bg-green-400 text-white px-4 py-1 rounded" id="checkout-btn">
             Finalizar pedido
           </button>
         </div>

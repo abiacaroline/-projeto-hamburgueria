@@ -5,6 +5,9 @@ const menu = document.getElementById("menu")
 const cartItemsContainer = document.getElementById("cart-items")
 const cartTotal = document.getElementById("cart-total")
 const cartCounter = document.getElementById("cart-count")
+const addressInput = document.getElementById("address")
+const addressWarn = document.getElementById("address-warn")
+const checkoutBtn = document.getElementById("checkout-btn")
 
 let cart = []
 
@@ -111,3 +114,21 @@ function removeItemCart(name) {
     updateCartModal();
   }
 }
+
+addressInput.addEventListener("input", (event) => {
+  let inputValue = event.target.value;
+
+  if (inputValue !== "") {
+    addressInput.classList.remove("border-red-500");
+    addressWarn.classList.add("hidden");
+    return;
+  }
+});
+
+checkoutBtn.addEventListener("click", () => {
+  if (cart.length === 0) return;
+  if (addressInput.value.trim() === "") {
+    addressWarn.classList.remove("hidden");
+    addressInput.classList.add("border-red-500");
+    return;
+  }})
